@@ -1,10 +1,31 @@
-# joyce-jy-lin.github.io
+# Joyce J.Y. Lin academic website
 
-# Joyce Lin
+This folder contains a complete static website for GitHub Pages.
 
-Enivronmental Epidemiologist, postdoctoral fellow in Weisskopf Lab at Harvard T.H. Chan School of Public Health. Previously Johns Hopkins Bloomberg School of Public Health (PhD) and Johns Hopkins University (BA).
+## How to upload to GitHub
 
-🔗 [Google Scholar](https://scholar.google.com/citations?user=ovjAFaQAAAAJ)  
-🔗 [LinkedIn](https://www.linkedin.com/in/jlin/)  
-🔗 [Twitter](https://x.com/joyce_jy_lin)  
-🔗 [GitHub](https://github.com/joyce-jy-lin)
+1. Unzip this folder.
+2. Go to your repository: `joyce-jy-lin/joyce-jy-lin.github.io`.
+3. Delete or replace the current files.
+4. Upload everything in this folder, including:
+   - `index.html`
+   - `research.html`
+   - `publications.html`
+   - `cv.html`
+   - `mentoring.html`
+   - `contact.html`
+   - `.nojekyll`
+   - `assets/`
+   - `files/`
+5. Commit the changes.
+6. Your site should update at https://joyce-jy-lin.github.io/ within a few minutes.
+
+## Editing
+
+You can edit any `.html` file directly in GitHub by clicking the file, clicking the pencil icon, making changes, and committing.
+
+## Important files
+
+- Headshot: `assets/img/headshot.jpg`
+- Styling: `assets/css/style.css`
+- CV: `files/Lin_CV_June2026.pdf`
