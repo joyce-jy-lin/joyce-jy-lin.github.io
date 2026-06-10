@@ -80,3 +80,10 @@
 
 }
 
+
+.hero-divider {
+  border: none;
+  border-top: 1px solid #d9e2ec;
+  margin: 28px 0 24px 0;
+  width: 75%;
+}
