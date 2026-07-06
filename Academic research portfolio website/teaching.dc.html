@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <template id="__bundler_thumbnail" data-bg-color="#f8f7f5">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="30" width="60" height="45" fill="none" stroke="#333" stroke-width="2" rx="2"/>
+      <line x1="25" y1="38" x2="75" y2="38" stroke="#333" stroke-width="1.5"/>
+      <line x1="25" y1="46" x2="75" y2="46" stroke="#333" stroke-width="1.5"/>
+      <line x1="25" y1="54" x2="60" y2="54" stroke="#333" stroke-width="1.5"/>
+    </svg>
+  </template>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: oklch(0.985 0.004 95); }
+    a { color: inherit; }
+    @media (max-width: 640px) {
+      .jl-nav-links { gap: 16px !important; font-size: 13px !important; flex-wrap: wrap; justify-content: flex-end; }
+      .jl-row { grid-template-columns: 1fr !important; gap: 4px !important; }
+    }
+  
+    .jl-nav-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+    .jl-menu-btn { display: none; }
+    @media (max-width: 640px) {
+      .jl-navbar { align-items: center !important; padding-left: 22px !important; padding-right: 18px !important; }
+      .jl-menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin: -12px -8px -12px 0; font-size: 24px; line-height: 1; color: oklch(0.3 0.012 250); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+      .jl-nav-links { display: none !important; position: absolute; top: calc(100% + 1px); left: 0; right: 0; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; background: oklch(0.985 0.004 95); border-bottom: 1px solid oklch(0.88 0.008 250); box-shadow: 0 10px 26px oklch(0.3 0.03 250 / 0.10); padding: 6px 0 10px !important; z-index: 50; font-size: 16px !important; }
+      .jl-nav-toggle:checked ~ .jl-nav-links { display: flex !important; }
+      .jl-nav-links a { padding: 14px 24px !important; display: block; }
+      main { padding-left: 22px !important; padding-right: 22px !important; }
+    }
+</style>
+</helmet>
+<div style="font-family: 'Public Sans', system-ui, sans-serif; color: oklch(0.26 0.012 250); background: oklch(0.985 0.004 95); min-height: 100vh; -webkit-font-smoothing: antialiased;">
+
+  <nav style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
+    <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
+      <a href="home.dc.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
+        <a href="publications.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Publications</a>
+        <a href="talks.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
+        <a href="media.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Media</a>
+        <a href="teaching.dc.html" style="text-decoration: none; color: oklch(0.24 0.012 250); font-weight: 600;">Teaching</a>
+        <a href="cv.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">CV</a>
+        <a href="contact.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width: 880px; margin: 0 auto; padding: 64px 32px 40px;">
+    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 42px; letter-spacing: -0.01em; margin: 0 0 18px;">Teaching & Mentoring</h1>
+    <p style="font-size: 15.5px; line-height: 1.7; color: oklch(0.42 0.012 250); margin: 0 0 8px; max-width: 62ch;">I teach courses across environmental health, exposure assessment, and epidemiology, and advise students from the undergraduate to doctoral level.</p>
+
+    <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="3">
+      <section style="margin-top: 44px;">
+        <h2 style="font-family: 'Newsreader', serif; font-weight: 500; font-size: 14px; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.5 0.06 200); margin: 0 0 4px;">{{ sec.title }}</h2>
+        <sc-for list="{{ sec.items }}" as="t" hint-placeholder-count="3">
+          <div class="jl-row" style="display: grid; grid-template-columns: 108px 1fr; gap: 22px; padding: 18px 0; border-top: 1px solid oklch(0.9 0.008 250); align-items: start;">
+            <div style="font-family: 'Newsreader', serif; font-size: 14px; color: oklch(0.55 0.05 200); padding-top: 2px;">{{ t.role }}</div>
+            <div>
+              <div style="font-size: 15.5px; line-height: 1.45; color: oklch(0.22 0.012 250); font-weight: 500; margin-bottom: 5px; text-wrap: pretty;">{{ t.title }}</div>
+              <div style="font-size: 14px; line-height: 1.55; color: oklch(0.46 0.012 250);">{{ t.detail }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+    </sc-for>
+
+  </main>
+
+  <footer style="border-top: 1px solid oklch(0.9 0.008 250); margin-top: 48px;">
+    <div style="max-width: 880px; margin: 0 auto; padding: 34px 32px 48px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; margin-bottom: 18px;">
+        <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" style="text-decoration: none; color: oklch(0.4 0.012 250);">Google Scholar</a>
+        <a href="https://orcid.org/0000-0001-8382-1020" style="text-decoration: none; color: oklch(0.4 0.012 250);">ORCID</a>
+        <a href="https://hsph.harvard.edu/profile/joyce-lin/" style="text-decoration: none; color: oklch(0.4 0.012 250);">Harvard Profile</a>
+        <a href="https://www.linkedin.com/in/jlin/" style="text-decoration: none; color: oklch(0.4 0.012 250);">LinkedIn</a>
+        <a href="https://github.com/joyce-jy-lin" style="text-decoration: none; color: oklch(0.4 0.012 250);">GitHub</a>
+        <a href="mailto:jlin1@hsph.harvard.edu" style="text-decoration: none; color: oklch(0.4 0.012 250);">Email</a>
+      </div>
+      <div style="font-size: 13px; color: oklch(0.6 0.012 250);">© Joyce J.Y. Lin</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:960,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      sections: [
+        {
+          title: "Instructor of Record",
+          items: [
+            { role: "Primary Instructor", title: "Urban Health: Global Perspectives for Sustainable Development", detail: "Johns Hopkins University (AS.280.460) · Fall 2021, Fall 2022" }
+          ]
+        },
+        {
+          title: "Guest Lectures",
+          items: [
+            { role: "Lecturer", title: "Chemical Hazards — Environmental Studies Capstone", detail: "Brandeis University, Waltham, MA · 2024" },
+            { role: "Lecturer", title: "Gravimetric PM Monitoring — Industrial Hygiene Laboratory", detail: "Johns Hopkins Bloomberg School of Public Health (182.614.01) · 2021, 2022" },
+            { role: "Lecturer", title: "Exposure Assessment — Environmental Health", detail: "Johns Hopkins Bloomberg School of Public Health (180.601.61) · 2020, 2021, 2022" }
+          ]
+        },
+        {
+          title: "Teaching Assistantships",
+          items: [
+            { role: "Section Leader", title: "Environment and Your Health: Introduction to Public Health", detail: "Johns Hopkins University (AS.280.101) · Fall 2020, 2021, 2022" },
+            { role: "Teaching Asst.", title: "The Built Environment: Influences and Challenges to Improving Population Health", detail: "Johns Hopkins Bloomberg School of Public Health (180.625.01) · Summer 2020, 2021, 2022" },
+            { role: "Teaching Asst.", title: "Environment and Your Health", detail: "Johns Hopkins University (AS.280.335) · Fall 2020, 2021, 2022" },
+            { role: "Teaching Asst.", title: "Environmental Health", detail: "Johns Hopkins Bloomberg School of Public Health (180.601.01) · Spring 2021" },
+            { role: "Teaching Asst.", title: "Community Driven Epidemiology and Environmental Justice", detail: "Johns Hopkins Bloomberg School of Public Health (180.625.01) · Fall 2020" },
+            { role: "Teaching Asst.", title: "Methods in Quantitative Health Risk Assessment", detail: "Johns Hopkins Bloomberg School of Public Health (317.605.81) · Spring 2019" }
+          ]
+        }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <template id="__bundler_thumbnail" data-bg-color="#f8f7f5">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="25" width="60" height="50" fill="none" stroke="#333" stroke-width="2"/>
+      <line x1="25" y1="35" x2="75" y2="35" stroke="#333" stroke-width="1.5"/>
+      <line x1="25" y1="43" x2="75" y2="43" stroke="#333" stroke-width="1.5"/>
+      <line x1="25" y1="51" x2="60" y2="51" stroke="#333" stroke-width="1.5"/>
+    </svg>
+  </template>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: oklch(0.985 0.004 95); }
+    a { color: inherit; }
+    @media (max-width: 640px) {
+      .jl-nav-links { gap: 16px !important; font-size: 13px !important; flex-wrap: wrap; justify-content: flex-end; }
+      .jl-pub { grid-template-columns: 1fr !important; gap: 4px !important; }
+    }
+  
+    .jl-nav-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+    .jl-menu-btn { display: none; }
+    @media (max-width: 640px) {
+      .jl-navbar { align-items: center !important; padding-left: 22px !important; padding-right: 18px !important; }
+      .jl-menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin: -12px -8px -12px 0; font-size: 24px; line-height: 1; color: oklch(0.3 0.012 250); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+      .jl-nav-links { display: none !important; position: absolute; top: calc(100% + 1px); left: 0; right: 0; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; background: oklch(0.985 0.004 95); border-bottom: 1px solid oklch(0.88 0.008 250); box-shadow: 0 10px 26px oklch(0.3 0.03 250 / 0.10); padding: 6px 0 10px !important; z-index: 50; font-size: 16px !important; }
+      .jl-nav-toggle:checked ~ .jl-nav-links { display: flex !important; }
+      .jl-nav-links a { padding: 14px 24px !important; display: block; }
+      main { padding-left: 22px !important; padding-right: 22px !important; }
+    }
+</style>
+</helmet>
+<div style="font-family: 'Public Sans', system-ui, sans-serif; color: oklch(0.26 0.012 250); background: oklch(0.985 0.004 95); min-height: 100vh; -webkit-font-smoothing: antialiased;">
+
+  <nav style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
+    <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
+      <a href="home.dc.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
+        <a href="publications.dc.html" style="text-decoration: none; color: oklch(0.24 0.012 250); font-weight: 600;">Publications</a>
+        <a href="talks.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
+        <a href="media.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Media</a>
+        <a href="teaching.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Teaching</a>
+        <a href="cv.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">CV</a>
+        <a href="contact.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width: 880px; margin: 0 auto; padding: 64px 32px 40px;">
+    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 42px; letter-spacing: -0.01em; margin: 0 0 18px;">Publications</h1>
+    <p style="font-size: 15.5px; line-height: 1.7; color: oklch(0.42 0.012 250); margin: 0 0 12px; max-width: 62ch;">Peer-reviewed publications in environmental epidemiology, exposure science, and life-course health. For the most current list, see my <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" style="color: oklch(0.5 0.07 200); text-decoration: none;">Google Scholar profile</a>.</p>
+    <p style="font-size: 13.5px; color: oklch(0.55 0.012 250); margin: 0 0 20px;">Publications appear under the name Joyce J.Y. Lin.</p>
+
+    <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="4">
+      <section style="margin-top: 48px;">
+        <h2 style="font-family: 'Newsreader', serif; font-weight: 500; font-size: 14px; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.5 0.06 200); margin: 0 0 4px;">{{ sec.title }}</h2>
+        <sc-for list="{{ sec.pubs }}" as="pub" hint-placeholder-count="3">
+          <div class="jl-pub" style="display: grid; grid-template-columns: 68px 1fr; gap: 22px; padding: 20px 0; border-top: 1px solid oklch(0.9 0.008 250); align-items: start;">
+            <div style="font-family: 'Newsreader', serif; font-size: 15px; color: oklch(0.55 0.05 200); padding-top: 2px;">{{ pub.year }}</div>
+            <div>
+              <div style="font-size: 15.5px; line-height: 1.5; color: oklch(0.22 0.012 250); font-weight: 500; margin-bottom: 6px; text-wrap: pretty;">{{ pub.title }}</div>
+              <div style="font-size: 14px; line-height: 1.55; color: oklch(0.46 0.012 250); margin-bottom: 5px;"><span>{{ pub.pre }}</span><strong style="font-weight: 600; color: oklch(0.3 0.012 250);">{{ pub.mid }}</strong><span>{{ pub.post }}</span></div>
+              <div style="font-size: 14px; line-height: 1.5;"><em style="color: oklch(0.42 0.012 250);">{{ pub.venue }}</em><sc-if value="{{ pub.linkLabel }}" hint-placeholder-val="Paper"><a href="{{ pub.href }}" style="color: oklch(0.5 0.07 200); text-decoration: none; margin-left: 10px; white-space: nowrap;">{{ pub.linkLabel }} →</a></sc-if></div>
+            </div>
+          </div>
+        </sc-for>
+      </section>
+    </sc-for>
+  </main>
+
+  <footer style="border-top: 1px solid oklch(0.9 0.008 250); margin-top: 48px;">
+    <div style="max-width: 880px; margin: 0 auto; padding: 34px 32px 48px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; margin-bottom: 18px;">
+        <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" style="text-decoration: none; color: oklch(0.4 0.012 250);">Google Scholar</a>
+        <a href="https://orcid.org/0000-0001-8382-1020" style="text-decoration: none; color: oklch(0.4 0.012 250);">ORCID</a>
+        <a href="https://hsph.harvard.edu/profile/joyce-lin/" style="text-decoration: none; color: oklch(0.4 0.012 250);">Harvard Profile</a>
+        <a href="https://www.linkedin.com/in/jlin/" style="text-decoration: none; color: oklch(0.4 0.012 250);">LinkedIn</a>
+        <a href="https://github.com/joyce-jy-lin" style="text-decoration: none; color: oklch(0.4 0.012 250);">GitHub</a>
+        <a href="mailto:jlin1@hsph.harvard.edu" style="text-decoration: none; color: oklch(0.4 0.012 250);">Email</a>
+      </div>
+      <div style="font-size: 13px; color: oklch(0.6 0.012 250);">© Joyce J.Y. Lin</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:960,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    const S = "https://hsph.harvard.edu/research/weisskopf-lab/st-louis-baby-teeth-later-life-health-study/st-louis-baby-tooth-study-publications/";
+    const raw = [
+      {
+        title: "Developmental Origins",
+        pubs: [
+          { year: "2026", title: "Prenatal and early postnatal lead exposure and later adulthood cognitive function in the St. Louis Baby Tooth–Later Life Health Study.", authors: "Hickman RC, **Lin JJY**, McAlaine KA, Farmer JG, Tang IW, Leung M, et al.", venue: "Neurology. 2026;106(6):e214616.", href: "https://pubmed.ncbi.nlm.nih.gov/41707109/", linkLabel: "PubMed" },
+          { year: "2026", title: "Prenatal and early postnatal lead exposure and later adulthood BMI: The Saint Louis Baby Tooth–Later Life Health Study.", authors: "**Lin JJY**, Hickman R, Leung M, Farmer J, Tang IW, McAlaine K, et al.", venue: "Environmental Research. 2026;302:124606.", href: "https://doi.org/10.1016/j.envres.2026.124606", linkLabel: "Paper" },
+          { year: "2026", title: "Childhood residential proximity to the radiologically contaminated Coldwater Creek and later-life cardiovascular disease in the St. Louis Baby Tooth Study.", authors: "Leung M, **Lin JJY**, Mittleman MA, Farmer JG, Tang IW, McAlaine K, et al.", venue: "Science of the Total Environment. 2026;1044:181957.", href: "", linkLabel: "" },
+          { year: "In press", title: "Mortality and childhood residence near the radiologically contaminated Coldwater Creek, St. Louis, Missouri.", authors: "Leung M, Farmer JG, Tang IW, **Lin JJY**, Mucci L, Mittleman M, et al.", venue: "International Journal of Epidemiology. Accepted.", href: "", linkLabel: "" },
+          { year: "2025", title: "Prenatal and early postnatal lead exposure, sensitive periods, and later adult mental health.", authors: "**Lin JJY**, Hickman R, Farmer J, Leung M, Tang IW, McAlaine K, et al.", venue: "JAMA Psychiatry. 2025;82(12):1225–1233.", href: "https://doi.org/10.1001/jamapsychiatry.2025.3012", linkLabel: "Paper" },
+          { year: "2025", title: "Cancer incidence and childhood residence near the Coldwater Creek radioactive waste site.", authors: "Leung M, Tang IW, **Lin JJY**, Mucci L, Farmer JG, McAlaine K, et al.", venue: "JAMA Network Open. 2025;8(7):e2521926.", href: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2836420", linkLabel: "Paper" }
+        ]
+      },
+      {
+        title: "Cognitive Health",
+        pubs: [
+          { year: "2026", title: "Sleep disturbances during perimenopause and later-life cognitive function.", authors: "Hu B, **Lin JJY**, Qiu X, McAlaine K, Mahalingaiah S, Weisskopf MG.", venue: "Menopause. 2026.", href: "https://doi.org/10.1097/GME.0000000000002790", linkLabel: "Paper" },
+          { year: "2024", title: "Associations of a toenail metal mixture with attention and memory in the Gulf Long-Term Follow-Up (GuLF) Study.", authors: "**Lin JJY**, Kuiper JR, Dickerson AS, Buckley JP, Volk HE, Rohlman DS, et al.", venue: "Science of the Total Environment. 2024;935:173387.", href: "https://doi.org/10.1016/j.scitotenv.2024.173387", linkLabel: "Paper" }
+        ]
+      },
+      {
+        title: "Exposure Science & Biomonitoring",
+        pubs: [
+          { year: "2024", title: "Residential proximity to metal-emitting industries and toenail metal concentration in the US Gulf States.", authors: "**Lin JJY**, Werder EJ, Lawrence KG, Braxton Jackson W, Sandler DP, Dickerson AS, et al.", venue: "Exposure and Health. 2024.", href: "https://doi.org/10.1007/s12403-023-00618-0", linkLabel: "Paper" },
+          { year: "2023", title: "Reliability of low-mass toenail samples as biomarkers of chronic metal exposure.", authors: "**Lin JJY**, Koffman LJ, Tehrani MW, Chen R, Han SG, Sandler DP, et al.", venue: "Journal of Exposure Science & Environmental Epidemiology. 2023;33:945–953.", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10709526/", linkLabel: "PMC" },
+          { year: "2023", title: "Laboratory and field evaluation of a low-cost methane sensor and key environmental factors for sensor calibration.", authors: "**Lin JJY**, Buehler C, Datta A, Gentner DR, Koehler K, Zamora ML.", venue: "Environmental Science: Atmospheres. 2023;3(4):683–694.", href: "https://doi.org/10.1039/D2EA00100D", linkLabel: "Paper" },
+          { year: "2022", title: "Characterizing spatiotemporal variability in airborne heavy metal concentration: changes after 18 years in Baltimore, MD.", authors: "**Lin JJY**, Tehrani MW, Chen R, Heaney CD, Rule AM.", venue: "Environmental Research. 2022;209:112878.", href: "https://doi.org/10.1016/j.envres.2022.112878", linkLabel: "Paper" }
+        ]
+      },
+      {
+        title: "Tobacco & E-Cigarette Exposures",
+        pubs: [
+          { year: "2023", title: "Characterization of e-cigarette users according to device type, use behaviors, and self-reported health outcomes: findings from the EMIT study.", authors: "Tillery A, Aherrera A, Chen R, **Lin JJY**, Tehrani M, Moustafa D, et al.", venue: "Tobacco Induced Diseases. 2023;21:171.", href: "https://doi.org/10.18332/tid/174972", linkLabel: "Paper" },
+          { year: "2023", title: "Metal concentrations in e-cigarette aerosol samples: a comparison by device type and flavor.", authors: "Aherrera A, **Lin JJ**, Chen R, Tehrani M, Schultze A, Borole A, et al.", venue: "Environmental Health Perspectives. 2023;131(12):127004.", href: "https://doi.org/10.1289/EHP11921", linkLabel: "Paper" }
+        ]
+      }
+    ];
+
+    const sections = raw.map(sec => ({
+      title: sec.title,
+      pubs: sec.pubs.map(p => {
+        const parts = p.authors.split("**");
+        return { ...p, pre: parts[0] || "", mid: parts[1] || "", post: parts[2] || "" };
+      })
+    }));
+
+    return { sections };
+  }
+}
+</script>
+</body>
+</html>
