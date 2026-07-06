@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <template id="__bundler_thumbnail" data-bg-color="#f8f7f5">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="25" width="60" height="50" fill="none" stroke="#333" stroke-width="2" rx="2"/>
+      <path d="M 20 28 L 50 48 L 80 28" fill="none" stroke="#333" stroke-width="1.5"/>
+    </svg>
+  </template>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: oklch(0.985 0.004 95); }
+    a { color: inherit; }
+    @media (max-width: 640px) {
+      .jl-nav-links { gap: 16px !important; font-size: 13px !important; flex-wrap: wrap; justify-content: flex-end; }
+      .jl-contact { grid-template-columns: 1fr !important; }
+      .jl-portrait { order: -1; max-width: 220px; }
+    }
+  
+    .jl-nav-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+    .jl-menu-btn { display: none; }
+    @media (max-width: 640px) {
+      .jl-navbar { align-items: center !important; padding-left: 22px !important; padding-right: 18px !important; }
+      .jl-menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin: -12px -8px -12px 0; font-size: 24px; line-height: 1; color: oklch(0.3 0.012 250); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+      .jl-nav-links { display: none !important; position: absolute; top: calc(100% + 1px); left: 0; right: 0; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; background: oklch(0.985 0.004 95); border-bottom: 1px solid oklch(0.88 0.008 250); box-shadow: 0 10px 26px oklch(0.3 0.03 250 / 0.10); padding: 6px 0 10px !important; z-index: 50; font-size: 16px !important; }
+      .jl-nav-toggle:checked ~ .jl-nav-links { display: flex !important; }
+      .jl-nav-links a { padding: 14px 24px !important; display: block; }
+      main { padding-left: 22px !important; padding-right: 22px !important; }
+    }
+</style>
+</helmet>
+<div style="font-family: 'Public Sans', system-ui, sans-serif; color: oklch(0.26 0.012 250); background: oklch(0.985 0.004 95); min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased;">
+
+  <nav style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
+    <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
+      <a href="home.dc.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
+        <a href="publications.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Publications</a>
+        <a href="talks.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
+        <a href="media.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Media</a>
+        <a href="teaching.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Teaching</a>
+        <a href="cv.dc.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">CV</a>
+        <a href="contact.dc.html" style="text-decoration: none; color: oklch(0.24 0.012 250); font-weight: 600;">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main style="max-width: 880px; margin: 0 auto; padding: 80px 32px; width: 100%; flex: 1; display: flex; align-items: center;">
+    <div class="jl-contact" style="display: grid; grid-template-columns: 1fr 300px; gap: 72px; align-items: center; width: 100%;">
+
+      <div>
+        <div style="font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: oklch(0.5 0.06 200); font-weight: 600; margin-bottom: 16px;">Contact</div>
+        <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 40px; line-height: 1.08; letter-spacing: -0.01em; margin: 0 0 32px;">Get in touch!</h1>
+
+        <div style="margin-bottom: 26px;">
+          <div style="font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.55 0.012 250); font-weight: 600; margin-bottom: 8px;">Email</div>
+          <a href="mailto:jlin1@hsph.harvard.edu" style="font-family: 'Newsreader', serif; font-size: 22px; color: oklch(0.4 0.045 200); text-decoration: none;">jlin1@hsph.harvard.edu</a>
+        </div>
+
+        <div style="height: 1px; background: oklch(0.9 0.008 250); margin: 0 0 26px;"></div>
+
+        <div style="margin-bottom: 26px;">
+          <div style="font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.55 0.012 250); font-weight: 600; margin-bottom: 8px;">Office</div>
+          <div style="font-size: 15.5px; line-height: 1.65; color: oklch(0.36 0.012 250);">Department of Environmental Health<br>Harvard T.H. Chan School of Public Health<br>677 Huntington Avenue, Boston, MA 02115</div>
+        </div>
+
+        <div style="height: 1px; background: oklch(0.9 0.008 250); margin: 0 0 26px;"></div>
+
+        <div>
+          <div style="font-size: 11.5px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.55 0.012 250); font-weight: 600; margin-bottom: 14px;">Find me online</div>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" style="font-size: 14px; color: oklch(0.4 0.045 200); border: 1px solid oklch(0.85 0.02 200); border-radius: 999px; padding: 7px 16px; text-decoration: none;" style-hover="background: oklch(0.955 0.012 200);">Google Scholar</a>
+            <a href="https://orcid.org/0000-0001-8382-1020" target="_blank" rel="noopener" style="font-size: 14px; color: oklch(0.4 0.045 200); border: 1px solid oklch(0.85 0.02 200); border-radius: 999px; padding: 7px 16px; text-decoration: none;" style-hover="background: oklch(0.955 0.012 200);">ORCID</a>
+            <a href="https://hsph.harvard.edu/profile/joyce-lin/" target="_blank" rel="noopener" style="font-size: 14px; color: oklch(0.4 0.045 200); border: 1px solid oklch(0.85 0.02 200); border-radius: 999px; padding: 7px 16px; text-decoration: none;" style-hover="background: oklch(0.955 0.012 200);">Harvard Profile</a>
+            <a href="https://www.linkedin.com/in/jlin/" target="_blank" rel="noopener" style="font-size: 14px; color: oklch(0.4 0.045 200); border: 1px solid oklch(0.85 0.02 200); border-radius: 999px; padding: 7px 16px; text-decoration: none;" style-hover="background: oklch(0.955 0.012 200);">LinkedIn</a>
+            <a href="https://github.com/joyce-jy-lin" target="_blank" rel="noopener" style="font-size: 14px; color: oklch(0.4 0.045 200); border: 1px solid oklch(0.85 0.02 200); border-radius: 999px; padding: 7px 16px; text-decoration: none;" style-hover="background: oklch(0.955 0.012 200);">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="jl-portrait" style="width: 100%; aspect-ratio: 4/5; border-radius: 3px; overflow: hidden; background: repeating-linear-gradient(135deg, oklch(0.93 0.006 250) 0 10px, oklch(0.955 0.006 250) 10px 20px); border: 1px solid oklch(0.9 0.008 250); position: relative;">
+        <img src="images/headshot.jpg" alt="Joyce Lin" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'">
+      </div>
+
+    </div>
+  </main>
+
+  <footer style="border-top: 1px solid oklch(0.9 0.008 250);">
+    <div style="max-width: 880px; margin: 0 auto; padding: 30px 32px;">
+      <div style="font-size: 13px; color: oklch(0.6 0.012 250);">© Joyce J.Y. Lin · Publications appear under the name Joyce J.Y. Lin.</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:960,&quot;height&quot;:620}}"></script>
+</body>
+</html>
