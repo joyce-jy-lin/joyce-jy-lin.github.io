@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://joyce-jy-lin.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/home.dc.html</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/publications.dc.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/talks.dc.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/media.dc.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/cv.dc.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/teaching.dc.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://joyce-jy-lin.github.io/contact.dc.html</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

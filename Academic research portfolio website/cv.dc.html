@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <template id="__bundler_thumbnail" data-bg-color="#f8f7f5">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="15" width="60" height="70" fill="none" stroke="#333" stroke-width="2"/>
+      <line x1="25" y1="25" x2="75" y2="25" stroke="#333" stroke-width="1.5"/>
+      <line x1="25" y1="35" x2="75" y2="35" stroke="#333" stroke-width="1.5"/>
+      <line x1="25" y1="45" x2="60" y2="45" stroke="#333" stroke-width="1.5"/>
+    </svg>
+  </template>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { background: oklch(0.985 0.004 95); }
+    a { color: inherit; }
+    .jl-print { display: none; }
+    @media (max-width: 640px) {
+      .jl-nav-links { gap: 16px !important; font-size: 13px !important; flex-wrap: wrap; justify-content: flex-end; }
+    }
+    @media print {
+      .jl-screen { display: none !important; }
+      .jl-print { display: block !important; }
+      body, .jl-page { background: #fff !important; }
+      @page { margin: 0.7in; }
+    }
+  
+    .jl-nav-toggle { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+    .jl-menu-btn { display: none; }
+    @media (max-width: 640px) {
+      .jl-navbar { align-items: center !important; padding-left: 22px !important; padding-right: 18px !important; }
+      .jl-menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; margin: -12px -8px -12px 0; font-size: 24px; line-height: 1; color: oklch(0.3 0.012 250); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+      .jl-nav-links { display: none !important; position: absolute; top: calc(100% + 1px); left: 0; right: 0; flex-direction: column !important; align-items: stretch !important; gap: 0 !important; background: oklch(0.985 0.004 95); border-bottom: 1px solid oklch(0.88 0.008 250); box-shadow: 0 10px 26px oklch(0.3 0.03 250 / 0.10); padding: 6px 0 10px !important; z-index: 50; font-size: 16px !important; }
+      .jl-nav-toggle:checked ~ .jl-nav-links { display: flex !important; }
+      .jl-nav-links a { padding: 14px 24px !important; display: block; }
+      main { padding-left: 22px !important; padding-right: 22px !important; }
+    }
+</style>
+</helmet>
+<div class="jl-page" style="font-family: 'Public Sans', system-ui, sans-serif; color: oklch(0.26 0.012 250); background: oklch(0.985 0.004 95); min-height: 100vh; display: flex; flex-direction: column; -webkit-font-smoothing: antialiased;">
+
+  <nav class="jl-screen" style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
+    <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
+      <a href="home.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
+        <a href="publications.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Publications</a>
+        <a href="talks.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
+        <a href="media.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Media</a>
+        <a href="teaching.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Teaching</a>
+        <a href="cv.html" style="text-decoration: none; color: oklch(0.24 0.012 250); font-weight: 600;">CV</a>
+        <a href="contact.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="jl-screen" style="max-width: 880px; margin: 0 auto; padding: 96px 32px; width: 100%; flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <div style="font-size: 12.5px; letter-spacing: 0.16em; text-transform: uppercase; color: oklch(0.5 0.06 200); font-weight: 600; margin-bottom: 18px;">Curriculum Vitae</div>
+    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 42px; letter-spacing: -0.01em; margin: 0 0 16px;">Joyce J.Y. Lin, PhD</h1>
+    <p style="font-size: 16px; line-height: 1.65; color: oklch(0.44 0.012 250); margin: 0 0 40px; max-width: 46ch;">Postdoctoral Fellow, Department of Environmental Health, Harvard T.H. Chan School of Public Health. Download my full curriculum vitae below.</p>
+
+    <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+      <a href="Lin_CV_July2026.pdf" download style="font-family: inherit; font-size: 14.5px; font-weight: 600; color: oklch(0.985 0.004 95); background: oklch(0.42 0.045 200); border: none; border-radius: 5px; padding: 14px 26px; cursor: pointer; text-decoration: none; display: inline-block;">Download CV</a>
+    </div>
+    <div style="font-size: 12.5px; color: oklch(0.6 0.012 250); margin-top: 16px;">Updated July 2026</div>
+  </main>
+
+  <footer class="jl-screen" style="border-top: 1px solid oklch(0.9 0.008 250);">
+    <div style="max-width: 880px; margin: 0 auto; padding: 30px 32px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; margin-bottom: 14px;">
+        <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" style="text-decoration: none; color: oklch(0.4 0.012 250);">Google Scholar</a>
+        <a href="https://orcid.org/0000-0001-8382-1020" style="text-decoration: none; color: oklch(0.4 0.012 250);">ORCID</a>
+        <a href="https://hsph.harvard.edu/profile/joyce-lin/" style="text-decoration: none; color: oklch(0.4 0.012 250);">Harvard Profile</a>
+        <a href="https://www.linkedin.com/in/jlin/" style="text-decoration: none; color: oklch(0.4 0.012 250);">LinkedIn</a>
+        <a href="mailto:jlin1@hsph.harvard.edu" style="text-decoration: none; color: oklch(0.4 0.012 250);">Email</a>
+      </div>
+      <div style="font-size: 13px; color: oklch(0.6 0.012 250);">© Joyce J.Y. Lin</div>
+    </div>
+  </footer>
+
+  <div class="jl-print" style="font-family: 'Public Sans', system-ui, sans-serif; color: #1a1a1a;">
+    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 26px; margin: 0 0 4px;">Joyce J.Y. Lin, PhD</h1>
+    <div style="font-size: 12px; color: #444; line-height: 1.5; margin-bottom: 3px;">Postdoctoral Fellow, Department of Environmental Health · Harvard T.H. Chan School of Public Health, Boston, MA 02115</div>
+    <div style="font-size: 12px; color: #444; margin-bottom: 16px;">jlin1@hsph.harvard.edu · ORCID 0000-0001-8382-1020</div>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Education & Training</h2>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2024–present</strong> · Postdoctoral Fellow, Environmental Health, Harvard T.H. Chan School of Public Health. NIH/NIEHS K99/R00 Pathway to Independence Awardee. Mentor: Marc Weisskopf.</div>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2019–2024</strong> · PhD, Environmental Health & Engineering, Johns Hopkins Bloomberg School of Public Health. Dissertation: Metal biomonitoring in low-mass toenail samples.</div>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2018–2019</strong> · MHS, Environmental Health & Engineering, Johns Hopkins Bloomberg School of Public Health. Specialization in Environmental Epidemiology; Certificate in Risk Sciences & Public Policy.</div>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2014–2018</strong> · BA, Public Health Studies, Johns Hopkins University, Krieger School of Arts & Sciences.</div>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Research Support</h2>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2026–2028</strong> · NIH/NIEHS K99/R00 Pathway to Independence Award (K99ES038596) — Early Life Lead Exposure and Later Life Cognitive Function: Biological and Psychosocial Pathways. PI.</div>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2021–2023</strong> · NIOSH ERC Pilot Project Research Training Award — Characterizing Chronic Metal Exposure in the US Gulf States. PI.</div>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2021–2022</strong> · JHU 21st Century Cities Award for Doctoral Research on Urban Issues. PI.</div>
+    <div style="font-size: 12px; line-height: 1.5; margin-bottom: 6px;"><strong>2017–2018</strong> · JHU Urban Health Institute Small Grant Award — Central Baltimore Community Health Strategy. PI.</div>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Peer-Reviewed Publications</h2>
+    <sc-for list="{{ pubs }}" as="p" hint-placeholder-count="6">
+      <div style="font-size: 11.5px; line-height: 1.5; margin-bottom: 6px;"><span>{{ p.pre }}</span><strong>{{ p.mid }}</strong><span>{{ p.post }}</span> {{ p.title }} <em>{{ p.venue }}</em></div>
+    </sc-for>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Honors & Awards</h2>
+    <sc-for list="{{ awards }}" as="a" hint-placeholder-count="6">
+      <div style="font-size: 12px; line-height: 1.5; margin-bottom: 4px;"><strong>{{ a.year }}</strong> · {{ a.text }}</div>
+    </sc-for>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Teaching</h2>
+    <div style="font-size: 12px; line-height: 1.55;">Primary Instructor — Urban Health: Global Perspectives for Sustainable Development (AS.280.460), Johns Hopkins University (Fall 2021, 2022). Guest lectures at Brandeis University and Johns Hopkins Bloomberg School of Public Health (2020–2024); section leader and teaching assistant across seven courses in environmental health, exposure assessment, and public health at Johns Hopkins (2019–2022).</div>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Research Mentorship</h2>
+    <div style="font-size: 12px; line-height: 1.55;">PhD: Monique Slowly (2025–), Marwa Osman (2024–). Master's: Esther Sun (2025–), Hanyu Liu (2025–). Undergraduate: Arianna Kales (Boston College, 2024–), Aghader Yassen (Harvard College, 2026–), Isabella Chavarro (William & Mary, 2024–), Kevin Han (Johns Hopkins, 2021–2023).</div>
+
+    <h2 style="font-family: 'Newsreader', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #2b6a72; border-bottom: 1px solid #bbb; padding-bottom: 4px; margin: 18px 0 8px;">Professional Service & Memberships</h2>
+    <div style="font-size: 12px; line-height: 1.55;">Journal peer reviewer: Environmental Health Perspectives, Science of the Total Environment, American Journal of Epidemiology, JESEE, Exposure and Health, Environmental Advances, Nicotine & Tobacco Research, Environmental Research, Environmental Science & Pollution Research. Conference abstract reviewer: ISEE (2023, 2024). Organizer & Co-Chair: Symposium on Biomonitoring for Environmental Metal Exposures, ISES Annual Meeting, Chicago (2024). Memberships: International Society for Exposure Science (2020–), International Society for Environmental Epidemiology (2021–).</div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:900,&quot;height&quot;:620}}">
+class Component extends DCLogic {
+  renderVals() {
+    const awards = [
+      { year: "2026", text: "NIH/NIEHS Pathway to Independence Award (K99/R00)" },
+      { year: "2025", text: "Environmental Health Values Award, Harvard T.H. Chan School of Public Health" },
+      { year: "2023", text: "Gordis Teaching Fellowship Award, Johns Hopkins University" },
+      { year: "2022", text: "Millard Bass Research Fund Scholar, Johns Hopkins Bloomberg School of Public Health" },
+      { year: "2022", text: "ISES Conference Award, International Society of Exposure Science" },
+      { year: "2022", text: "Jane Warren Trainee Conference Award, Health Effects Institute" },
+      { year: "2021", text: "ISES Conference Award, International Society of Exposure Science" },
+      { year: "2019", text: "Delta Omega, Alpha Chapter, Johns Hopkins Bloomberg School of Public Health" },
+      { year: "2018", text: "Bloomberg Centennial Scholar, Johns Hopkins Bloomberg School of Public Health" },
+      { year: "2018", text: "University Honors, Johns Hopkins University" }
+    ];
+
+    const pubRaw = [
+      { authors: "Hickman RC, **Lin JJY**, McAlaine KA, et al.", title: "Prenatal and early postnatal lead exposure and later adulthood cognitive function in the St. Louis Baby Tooth–Later Life Health Study.", venue: "Neurology. 2026;106(6):e214616." },
+      { authors: "**Lin JJY**, Hickman R, Leung M, et al.", title: "Prenatal and early postnatal lead exposure and later adulthood BMI.", venue: "Environmental Research. 2026;302:124606." },
+      { authors: "Leung M, **Lin JJY**, Mittleman MA, et al.", title: "Childhood residential proximity to Coldwater Creek and later-life cardiovascular disease.", venue: "Science of the Total Environment. 2026;1044:181957." },
+      { authors: "Hu B, **Lin JJY**, Qiu X, et al.", title: "Sleep disturbances during perimenopause and later-life cognitive function.", venue: "Menopause. 2026." },
+      { authors: "Leung M, Farmer JG, Tang IW, **Lin JJY**, et al.", title: "Mortality and childhood residence near the radiologically contaminated Coldwater Creek, St. Louis, Missouri.", venue: "Int J Epidemiol. Accepted." },
+      { authors: "**Lin JJY**, Hickman R, Farmer J, et al.", title: "Prenatal and early postnatal lead exposure, sensitive periods, and later adult mental health.", venue: "JAMA Psychiatry. 2025;82(12):1225–1233." },
+      { authors: "Leung M, Tang IW, **Lin JJY**, et al.", title: "Cancer incidence and childhood residence near the Coldwater Creek radioactive waste site.", venue: "JAMA Network Open. 2025;8(7):e2521926." },
+      { authors: "**Lin JJY**, Kuiper JR, Dickerson AS, et al.", title: "Associations of a toenail metal mixture with attention and memory in the GuLF Study.", venue: "Sci Total Environ. 2024;935:173387." },
+      { authors: "**Lin JJY**, Werder EJ, Lawrence KG, et al.", title: "Residential proximity to metal-emitting industries and toenail metal concentration in the US Gulf States.", venue: "Exposure and Health. 2024." },
+      { authors: "**Lin JJY**, Koffman LJ, Tehrani MW, et al.", title: "Reliability of low-mass toenail samples as biomarkers of chronic metal exposure.", venue: "J Expo Sci Environ Epidemiol. 2023;33:945–953." },
+      { authors: "Tillery A, Aherrera A, Chen R, **Lin JJY**, et al.", title: "Characterization of e-cigarette users by device type, use behaviors, and self-reported health outcomes (EMIT study).", venue: "Tob Induc Dis. 2023;21:171." },
+      { authors: "Aherrera A, **Lin JJ**, Chen R, et al.", title: "Metal concentrations in e-cigarette aerosol samples: a comparison by device type and flavor.", venue: "Environ Health Perspect. 2023;131(12):127004." },
+      { authors: "**Lin JJY**, Buehler C, Datta A, et al.", title: "Laboratory and field evaluation of a low-cost methane sensor and key environmental factors for sensor calibration.", venue: "Environ Sci Atmos. 2023;3(4):683–694." },
+      { authors: "**Lin JJY**, Tehrani MW, Chen R, et al.", title: "Characterizing spatiotemporal variability in airborne heavy metal concentration: changes after 18 years in Baltimore, MD.", venue: "Environ Res. 2022;209:112878." }
+    ];
+    const pubs = pubRaw.map(p => {
+      const parts = p.authors.split("**");
+      return { ...p, pre: parts[0] || "", mid: parts[1] || "", post: parts[2] || "" };
+    });
+
+    return { awards, pubs, doPrint: () => window.print() };
+  }
+}
+</script>
+</body>
+</html>
