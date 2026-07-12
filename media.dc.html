@@ -43,7 +43,7 @@
 
   <nav style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
     <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
-      <a href="home.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <a href="home.html" style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -0.005em; text-decoration: none; color: oklch(0.2 0.012 250);">Joyce J.Y. Lin</a>
       <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
         <a href="publications.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Publications</a>
         <a href="talks.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
@@ -56,20 +56,20 @@
   </nav>
 
   <main style="max-width: 880px; margin: 0 auto; padding: 64px 32px 40px;">
-    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 42px; letter-spacing: -0.01em; margin: 0 0 18px;">Media & Research Highlights</h1>
+    <h1 style="font-family: 'Public Sans', sans-serif; font-weight: 800; font-size: 42px; letter-spacing: -0.02em; margin: 0 0 18px;">Media & Research Highlights</h1>
     <p style="font-size: 15.5px; line-height: 1.7; color: oklch(0.42 0.012 250); margin: 0 0 24px; max-width: 62ch;">Selected press coverage and institutional features of my research.</p>
 
     <div style="display: grid; gap: 20px;">
       <sc-for list="{{ items }}" as="m" hint-placeholder-count="3">
         <article style="border: 1px solid oklch(0.9 0.008 250); border-radius: 4px; padding: 28px 30px; background: oklch(0.995 0.003 95);">
-          <div style="font-size: 12px; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.55 0.06 200); font-weight: 600; margin-bottom: 10px;">{{ m.year }}</div>
-          <h2 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 24px; line-height: 1.25; letter-spacing: -0.005em; color: oklch(0.22 0.012 250); margin: 0 0 18px; text-wrap: pretty;">{{ m.headline }}</h2>
+          <div style="font-size: 12px; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.6 0.17 55); font-weight: 600; margin-bottom: 10px;">{{ m.year }}</div>
+          <h2 style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.3; letter-spacing: -0.01em; color: oklch(0.22 0.012 250); margin: 0 0 18px; text-wrap: pretty;">{{ m.headline }}</h2>
           <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px;">
             <sc-for list="{{ m.outlets }}" as="o" hint-placeholder-count="3">
-              <a href="{{ o.href }}" target="_blank" rel="noopener" style="font-size: 13px; color: oklch(0.4 0.045 200); border: 1px solid oklch(0.85 0.02 200); border-radius: 999px; padding: 5px 13px; background: oklch(0.985 0.004 95); text-decoration: none; display: inline-flex; align-items: center; gap: 5px;" style-hover="background: oklch(0.955 0.012 200); border-color: oklch(0.72 0.04 200);">{{ o.name }} ↗</a>
+              <a href="{{ o.href }}" target="_blank" rel="noopener" style="font-size: 13px; color: oklch(0.52 0.17 55); border: 1px solid oklch(0.8 0.07 55); border-radius: 999px; padding: 5px 13px; background: oklch(0.985 0.004 95); text-decoration: none; display: inline-flex; align-items: center; gap: 5px;" style-hover="background: oklch(0.95 0.03 55); border-color: oklch(0.72 0.04 200);">{{ o.name }} ↗</a>
             </sc-for>
           </div>
-          <a href="{{ m.href }}" style="font-size: 14px; color: oklch(0.5 0.07 200); text-decoration: none;">Read the study →</a>
+          <a href="{{ m.href }}" style="font-size: 14px; color: oklch(0.52 0.17 55); text-decoration: none;">Read the study →</a>
         </article>
       </sc-for>
     </div>

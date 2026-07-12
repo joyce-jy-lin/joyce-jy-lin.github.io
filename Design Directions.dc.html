@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+  <meta name="design_doc_mode" content="canvas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <template id="__bundler_thumbnail" data-bg-color="#f0eee9">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="30" r="12" fill="#8a5a3c"/>
+      <text x="50" y="65" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">JL</text>
+    </svg>
+  </template>
+  <style>
+    body { margin: 0; background: #f0eee9; font-family: system-ui, sans-serif; }
+    .dv-turn { padding: 40px 44px 32px; }
+    .dv-thd { display: flex; align-items: baseline; gap: 10px; margin: 0 0 22px; }
+    .dv-tid { font: 600 10px ui-monospace, Menlo, monospace; padding: 3px 7px; background: #1a1a1a; color: #fff; border-radius: 4px; text-decoration: none; }
+    .dv-tname { font: 600 14px/1.2 system-ui, sans-serif; color: #1a1a1a; }
+    .dv-opts { display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start; }
+    .dv-opt { flex: none; display: flex; flex-direction: column; gap: 10px; scroll-margin-top: 16px; }
+    .dv-oid { font: 600 10.5px ui-monospace, Menlo, monospace; padding: 3px 7px; background: rgba(0,0,0,.08); color: #1a1a1a; border-radius: 5px; text-decoration: none; }
+    .dv-olabel { display: flex; align-items: baseline; gap: 8px; font: 400 12px/1.3 system-ui, sans-serif; color: rgba(0,0,0,.6); }
+    .dv-card { width: 420px; background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.08); overflow: hidden; }
+    .dv-next { margin: 24px 0 0; font: 12px/1.6 system-ui, sans-serif; color: rgba(0,0,0,.55); max-width: 600px; }
+  </style>
+</helmet>
+
+<section class="dv-turn" id="t3">
+  <div class="dv-thd"><a class="dv-tid" href="#t3">3</a><span class="dv-tname">Full home page mockup in modern-minimal style, riffing on <a class="dv-oid" href="#1b">1b</a></span></div>
+  <div class="dv-opts">
+    <div class="dv-opt" id="3a">
+      <div class="dv-olabel"><a class="dv-oid" href="#3a">3a</a>Modern minimal — bold amber accent, sans headline, card-style research areas</div>
+      <div class="dv-card" style="width: 560px;">
+        <div style="background: #ffffff; font-family: 'Public Sans', sans-serif; color: oklch(0.2 0.01 260);">
+
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 22px 34px; border-bottom: 1px solid oklch(0.92 0.006 260);">
+            <span style="font-weight: 700; font-size: 16px; letter-spacing: -0.01em;">JOYCE LIN</span>
+            <div style="display: flex; gap: 18px; font-size: 12px; font-weight: 600; color: oklch(0.4 0.01 260);">
+              <span>Publications</span><span>Talks</span><span>Media</span><span>CV</span>
+            </div>
+          </div>
+
+          <div style="padding: 40px 34px 30px; display: grid; grid-template-columns: 1fr 170px; gap: 26px; align-items: start;">
+            <div>
+              <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.58 0.17 55); margin-bottom: 10px;">Environmental Epidemiologist</div>
+              <h1 style="font-weight: 800; font-size: 48px; line-height: 0.98; letter-spacing: -0.02em; margin: 0 0 16px;">Joyce Lin</h1>
+              <div style="width: 50px; height: 5px; background: oklch(0.7 0.19 55); margin-bottom: 16px; border-radius: 3px;"></div>
+              <p style="font-size: 15px; line-height: 1.6; color: oklch(0.42 0.01 260); margin: 0 0 12px; max-width: 95%;">I study how environmental exposures across the life course shape trajectories of healthy aging and chronic disease.</p>
+              <p style="font-size: 12.5px; line-height: 1.7; color: oklch(0.52 0.01 260); margin: 0;">Postdoctoral Research Fellow, Harvard T.H. Chan School of Public Health<br>NIH/NIEHS K99/R00 Pathway to Independence Awardee</p>
+            </div>
+            <div style="width: 170px; height: 210px; border-radius: 10px; background: linear-gradient(160deg, oklch(0.75 0.03 260), oklch(0.9 0.01 260)); border: 3px solid oklch(0.7 0.19 55); box-shadow: 0 10px 26px oklch(0.6 0.15 55 / 0.18);"></div>
+          </div>
+
+          <div style="padding: 8px 34px 34px;">
+            <div style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: oklch(0.4 0.01 260); margin-bottom: 14px;">Research Areas</div>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+
+              <div style="border: 2px solid oklch(0.7 0.19 55); border-radius: 14px; padding: 18px 20px; background: oklch(0.985 0.008 55);">
+                <div style="display: grid; grid-template-columns: 34px 1fr 20px; gap: 12px; align-items: center;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: oklch(0.7 0.19 55); color: #fff; font-size: 12px; font-weight: 700;">01</span>
+                  <div>
+                    <div style="font-weight: 700; font-size: 15.5px; margin-bottom: 4px;">Advancing Biomonitoring for Life-Course Epidemiology</div>
+                    <div style="font-size: 13px; color: oklch(0.44 0.01 260); line-height: 1.45;">Developing and validating biomarkers that reconstruct exposures across populations and life stages.</div>
+                  </div>
+                  <span style="font-size: 18px; color: oklch(0.55 0.15 55); justify-self: end;">+</span>
+                </div>
+              </div>
+
+              <div style="border: 2px solid oklch(0.9 0.008 260); border-radius: 14px; padding: 18px 20px; background: #fff;">
+                <div style="display: grid; grid-template-columns: 34px 1fr 20px; gap: 12px; align-items: center;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: oklch(0.94 0.006 260); color: oklch(0.42 0.01 260); font-size: 12px; font-weight: 700;">02</span>
+                  <div>
+                    <div style="font-weight: 700; font-size: 15.5px; margin-bottom: 4px;">Tracing Developmental Origins of Chronic Disease</div>
+                    <div style="font-size: 13px; color: oklch(0.44 0.01 260); line-height: 1.45;">Linking biomarkers of prenatal exposure to cognitive and metabolic outcomes in older adulthood.</div>
+                  </div>
+                  <span style="font-size: 18px; color: oklch(0.6 0.01 260); justify-self: end;">+</span>
+                </div>
+              </div>
+
+              <div style="border: 2px solid oklch(0.9 0.008 260); border-radius: 14px; padding: 18px 20px; background: #fff;">
+                <div style="display: grid; grid-template-columns: 34px 1fr 20px; gap: 12px; align-items: center;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: oklch(0.94 0.006 260); color: oklch(0.42 0.01 260); font-size: 12px; font-weight: 700;">03</span>
+                  <div>
+                    <div style="font-weight: 700; font-size: 15.5px; margin-bottom: 4px;">Uncovering Mechanisms of Resilience and Healthy Aging</div>
+                    <div style="font-size: 13px; color: oklch(0.44 0.01 260); line-height: 1.45;">Understanding which pathways are modifiable and which factors promote resilience.</div>
+                  </div>
+                  <span style="font-size: 18px; color: oklch(0.6 0.01 260); justify-self: end;">+</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div style="padding: 18px 34px 26px; display: flex; gap: 16px; font-size: 12px; font-weight: 600; color: oklch(0.42 0.01 260); border-top: 1px solid oklch(0.92 0.006 260);">
+            <span>Scholar</span><span>ORCID</span><span>Harvard Profile</span><span>LinkedIn</span><span>GitHub</span><span>Email</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="dv-next">Try next: "build <a class="dv-oid" href="#3a">3a</a> as the real home page" · "try a cooler accent color instead of amber" · "make the headshot even bigger"</p>
+</section>
+
+<section class="dv-turn" id="t2">
+  <div class="dv-thd"><a class="dv-tid" href="#t2">2</a><span class="dv-tname">Research areas as tab-style bubbles, riffing on <a class="dv-oid" href="#1b">1b</a></span></div>
+  <div class="dv-opts">
+    <div class="dv-opt" id="2a">
+      <div class="dv-olabel"><a class="dv-oid" href="#2a">2a</a>Research areas as bordered, button-like tabs</div>
+      <div class="dv-card" style="width: 460px;">
+        <div style="background: #ffffff; font-family: 'Public Sans', sans-serif; color: oklch(0.2 0.01 260); padding: 26px;">
+          <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: oklch(0.4 0.01 260); margin-bottom: 14px;">Research Areas</div>
+
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="border: 2px solid oklch(0.7 0.19 55); border-radius: 12px; padding: 16px 18px; background: oklch(0.98 0.01 55);">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: oklch(0.7 0.19 55); color: #fff; font-size: 11px; font-weight: 700;">01</span>
+                  <span style="font-weight: 700; font-size: 15.5px;">Advancing Biomonitoring for Life-Course Epidemiology</span>
+                </div>
+                <span style="font-size: 18px; color: oklch(0.55 0.15 55);">+</span>
+              </div>
+            </div>
+
+            <div style="border: 2px solid oklch(0.88 0.01 260); border-radius: 12px; padding: 16px 18px; background: #fff;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: oklch(0.92 0.008 260); color: oklch(0.4 0.01 260); font-size: 11px; font-weight: 700;">02</span>
+                  <span style="font-weight: 700; font-size: 15.5px;">Tracing Developmental Origins of Chronic Disease</span>
+                </div>
+                <span style="font-size: 18px; color: oklch(0.6 0.01 260);">+</span>
+              </div>
+            </div>
+
+            <div style="border: 2px solid oklch(0.88 0.01 260); border-radius: 12px; padding: 16px 18px; background: #fff;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: oklch(0.92 0.008 260); color: oklch(0.4 0.01 260); font-size: 11px; font-weight: 700;">03</span>
+                  <span style="font-weight: 700; font-size: 15.5px;">Uncovering Mechanisms of Resilience and Healthy Aging</span>
+                </div>
+                <span style="font-size: 18px; color: oklch(0.6 0.01 260);">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 4px; padding: 16px 0 0 46px;">
+            <p style="font-size: 12.5px; line-height: 1.55; color: oklch(0.42 0.01 260); margin: 0;">Developing biomarkers that reconstruct exposures across life stages — expands here when clicked, matching the open state of area 01.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="dv-next">Try next: "use <a class="dv-oid" href="#2a">2a</a>'s tab style on the real site" · "make the closed tabs a bit taller" · "try a filled (not outlined) tab style"</p>
+</section>
+
+<section class="dv-turn" id="t1">
+  <div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Three design directions for the home page</span></div>
+  <div class="dv-opts">
+
+    <div class="dv-opt" id="1a">
+      <div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Warm editorial — journal feel, terracotta accent, bleed portrait</div>
+      <div class="dv-card">
+        <div style="background: oklch(0.97 0.014 75); font-family: 'Public Sans', sans-serif; color: oklch(0.28 0.02 60);">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 18px 26px; border-bottom: 1px solid oklch(0.88 0.02 70);">
+            <span style="font-family: 'Newsreader', serif; font-size: 16px;">Joyce J.Y. Lin</span>
+            <div style="display: flex; gap: 14px; font-size: 11px; color: oklch(0.45 0.03 60);">
+              <span>Publications</span><span>Talks</span><span>CV</span>
+            </div>
+          </div>
+          <div style="position: relative; padding: 40px 26px 0;">
+            <div style="font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: oklch(0.5 0.16 45); font-weight: 700; margin-bottom: 12px;">Environmental Epidemiologist</div>
+            <h1 style="font-family: 'Newsreader', serif; font-weight: 500; font-size: 34px; line-height: 1.05; margin: 0 0 14px; color: oklch(0.24 0.02 60);">Joyce Lin, PhD</h1>
+            <p style="font-family: 'Newsreader', serif; font-style: italic; font-size: 16px; line-height: 1.4; color: oklch(0.4 0.03 60); margin: 0 0 22px; max-width: 88%;">How early-life environmental exposures shape trajectories of healthy aging.</p>
+          </div>
+          <div style="margin: 0 26px 26px; border-radius: 4px; overflow: hidden; aspect-ratio: 16/8; background: linear-gradient(135deg, oklch(0.62 0.13 45), oklch(0.7 0.1 75));"></div>
+          <div style="padding: 0 26px 26px;">
+            <div style="border-top: 2px solid oklch(0.5 0.16 45); padding-top: 16px;">
+              <div style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: oklch(0.5 0.16 45); font-weight: 700; margin-bottom: 8px;">01 — Research Area</div>
+              <div style="font-family: 'Newsreader', serif; font-size: 18px; margin-bottom: 4px;">Advancing Biomonitoring for Life-Course Epidemiology</div>
+              <div style="font-size: 12.5px; color: oklch(0.45 0.02 60); line-height: 1.5;">Developing biomarkers that reconstruct exposures across life stages.</div>
+            </div>
+          </div>
+          <div style="padding: 16px 26px; border-top: 1px solid oklch(0.88 0.02 70); display: flex; gap: 12px; font-size: 11px; color: oklch(0.5 0.03 60);">
+            <span>Scholar</span><span>ORCID</span><span>LinkedIn</span><span>Email</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="1b">
+      <div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Modern minimal — bold amber accent, confident type scale</div>
+      <div class="dv-card">
+        <div style="background: #ffffff; font-family: 'Public Sans', sans-serif; color: oklch(0.2 0.01 260);">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 26px;">
+            <span style="font-weight: 700; font-size: 15px; letter-spacing: -0.01em;">JOYCE LIN</span>
+            <div style="display: flex; gap: 16px; font-size: 11px; font-weight: 600; color: oklch(0.4 0.01 260);">
+              <span>Publications</span><span>Talks</span><span>CV</span>
+            </div>
+          </div>
+          <div style="padding: 8px 26px 28px; display: grid; grid-template-columns: 1fr 140px; gap: 18px; align-items: start;">
+            <div>
+              <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(0.55 0.15 55); margin-bottom: 8px;">Environmental Epidemiologist</div>
+              <h1 style="font-weight: 800; font-size: 42px; line-height: 1.0; letter-spacing: -0.02em; margin: 0 0 12px;">Joyce Lin</h1>
+              <div style="width: 46px; height: 5px; background: oklch(0.7 0.19 55); margin-bottom: 14px; border-radius: 3px;"></div>
+              <p style="font-size: 14px; line-height: 1.55; color: oklch(0.42 0.01 260); margin: 0; max-width: 92%;">Studying how exposures across the life course shape healthy aging and chronic disease.</p>
+            </div>
+            <div style="width: 140px; height: 172px; border-radius: 8px; background: linear-gradient(160deg, oklch(0.75 0.03 260), oklch(0.9 0.01 260)); border: 2px solid oklch(0.7 0.19 55);"></div>
+          </div>
+          <div style="margin: 0 26px 22px; padding: 18px; border-radius: 10px; background: oklch(0.98 0.01 55); border-left: 4px solid oklch(0.7 0.19 55);">
+            <div style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: oklch(0.55 0.15 55); margin-bottom: 6px;">01 · Biomonitoring</div>
+            <div style="font-weight: 700; font-size: 16px; margin-bottom: 4px;">Advancing Biomonitoring for Life-Course Epidemiology</div>
+            <div style="font-size: 12px; color: oklch(0.42 0.01 260); line-height: 1.5;">Developing biomarkers that reconstruct exposures across life stages.</div>
+          </div>
+          <div style="padding: 16px 26px 22px; display: flex; gap: 14px; font-size: 11px; font-weight: 600; color: oklch(0.42 0.01 260); border-top: 1px solid oklch(0.92 0.006 260);">
+            <span>Scholar</span><span>ORCID</span><span>LinkedIn</span><span>Email</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dv-opt" id="1c">
+      <div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Scientific / data-forward — grid lines, monospace accents, deep teal</div>
+      <div class="dv-card">
+        <div style="background: oklch(0.98 0.003 240); font-family: 'Public Sans', sans-serif; color: oklch(0.22 0.02 240); background-image: linear-gradient(oklch(0.93 0.006 240) 1px, transparent 1px), linear-gradient(90deg, oklch(0.93 0.006 240) 1px, transparent 1px); background-size: 24px 24px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 18px 26px; background: oklch(0.98 0.003 240 / 0.9); border-bottom: 1px solid oklch(0.85 0.01 240);">
+            <span style="font-family: 'Space Mono', monospace; font-size: 14px;">J. LIN</span>
+            <div style="display: flex; gap: 14px; font-family: 'Space Mono', monospace; font-size: 10px; color: oklch(0.4 0.02 240);">
+              <span>[pubs]</span><span>[talks]</span><span>[cv]</span>
+            </div>
+          </div>
+          <div style="padding: 30px 26px 0;">
+            <div style="font-family: 'Space Mono', monospace; font-size: 10.5px; letter-spacing: 0.05em; color: oklch(0.5 0.14 195); margin-bottom: 10px;">// environmental epidemiologist</div>
+            <h1 style="font-weight: 600; font-size: 28px; line-height: 1.1; margin: 0 0 12px; letter-spacing: -0.01em;">Joyce Lin, PhD</h1>
+            <p style="font-size: 13.5px; line-height: 1.55; color: oklch(0.4 0.02 240); margin: 0 0 20px; max-width: 90%;">Exposures across the life course → trajectories of healthy aging and chronic disease.</p>
+          </div>
+          <div style="margin: 0 26px 22px; aspect-ratio: 16/7; border: 1px solid oklch(0.75 0.02 240); background: oklch(0.94 0.008 240); position: relative;">
+            <div style="position: absolute; bottom: 6px; right: 8px; font-family: 'Space Mono', monospace; font-size: 9px; color: oklch(0.55 0.02 240);">fig. 1 — headshot</div>
+          </div>
+          <div style="padding: 0 26px 22px;">
+            <div style="border: 1px solid oklch(0.75 0.02 240); background: oklch(1 0 0 / 0.6); padding: 14px 16px;">
+              <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: oklch(0.5 0.14 195); margin-bottom: 6px;">01 / BIOMONITORING</div>
+              <div style="font-weight: 600; font-size: 15px; margin-bottom: 4px;">Advancing Biomonitoring for Life-Course Epidemiology</div>
+              <div style="font-size: 12px; color: oklch(0.4 0.02 240); line-height: 1.5;">Developing biomarkers that reconstruct exposures across life stages.</div>
+            </div>
+          </div>
+          <div style="padding: 14px 26px 20px; display: flex; gap: 14px; font-family: 'Space Mono', monospace; font-size: 10px; color: oklch(0.45 0.02 240); border-top: 1px solid oklch(0.85 0.01 240);">
+            <span>scholar</span><span>orcid</span><span>linkedin</span><span>email</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="dv-next">Try next: "build out <a class="dv-oid" href="#1a">1a</a> as the real home page" · "combine the headshot from <a class="dv-oid" href="#1b">1b</a> with the layout of <a class="dv-oid" href="#1c">1c</a>" · "show more headshot treatments for <a class="dv-oid" href="#1a">1a</a>"</p>
+</section>
+
+</x-dc>
+</body>
+</html>

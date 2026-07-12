@@ -45,7 +45,7 @@
 
   <nav style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
     <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
-      <a href="home.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <a href="home.html" style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -0.005em; text-decoration: none; color: oklch(0.2 0.012 250);">Joyce J.Y. Lin</a>
       <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
         <a href="publications.html" style="text-decoration: none; color: oklch(0.24 0.012 250); font-weight: 600;">Publications</a>
         <a href="talks.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
@@ -58,20 +58,20 @@
   </nav>
 
   <main style="max-width: 880px; margin: 0 auto; padding: 64px 32px 40px;">
-    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 42px; letter-spacing: -0.01em; margin: 0 0 18px;">Publications</h1>
-    <p style="font-size: 15.5px; line-height: 1.7; color: oklch(0.42 0.012 250); margin: 0 0 12px; max-width: 62ch;">Peer-reviewed publications in environmental epidemiology, exposure science, and life-course health. For the most current list, see my <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" style="color: oklch(0.5 0.07 200); text-decoration: none;">Google Scholar profile</a>.</p>
+    <h1 style="font-family: 'Public Sans', sans-serif; font-weight: 800; font-size: 42px; letter-spacing: -0.02em; margin: 0 0 18px;">Publications</h1>
+    <p style="font-size: 15.5px; line-height: 1.7; color: oklch(0.42 0.012 250); margin: 0 0 12px; max-width: 62ch;">Peer-reviewed publications in environmental epidemiology, exposure science, and life-course health. For the most current list, see my <a href="https://scholar.google.com/citations?user=ovjAFaQAAAAJ&hl=en&oi=ao" style="color: oklch(0.52 0.17 55); text-decoration: none;">Google Scholar profile</a>.</p>
     <p style="font-size: 13.5px; color: oklch(0.55 0.012 250); margin: 0 0 20px;">Publications appear under the name Joyce J.Y. Lin.</p>
 
     <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="4">
       <section style="margin-top: 48px;">
-        <h2 style="font-family: 'Newsreader', serif; font-weight: 500; font-size: 14px; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.5 0.06 200); margin: 0 0 4px;">{{ sec.title }}</h2>
+        <h2 style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: oklch(0.4 0.012 250); margin: 0 0 4px;">{{ sec.title }}</h2>
         <sc-for list="{{ sec.pubs }}" as="pub" hint-placeholder-count="3">
           <div class="jl-pub" style="display: grid; grid-template-columns: 68px 1fr; gap: 22px; padding: 20px 0; border-top: 1px solid oklch(0.9 0.008 250); align-items: start;">
-            <div style="font-family: 'Newsreader', serif; font-size: 15px; color: oklch(0.55 0.05 200); padding-top: 2px;">{{ pub.year }}</div>
+            <div style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 13.5px; color: oklch(0.6 0.17 55); padding-top: 2px;">{{ pub.year }}</div>
             <div>
               <div style="font-size: 15.5px; line-height: 1.5; color: oklch(0.22 0.012 250); font-weight: 500; margin-bottom: 6px; text-wrap: pretty;">{{ pub.title }}</div>
               <div style="font-size: 14px; line-height: 1.55; color: oklch(0.46 0.012 250); margin-bottom: 5px;"><span>{{ pub.pre }}</span><strong style="font-weight: 600; color: oklch(0.3 0.012 250);">{{ pub.mid }}</strong><span>{{ pub.post }}</span></div>
-              <div style="font-size: 14px; line-height: 1.5;"><em style="color: oklch(0.42 0.012 250);">{{ pub.venue }}</em><sc-if value="{{ pub.linkLabel }}" hint-placeholder-val="Paper"><a href="{{ pub.href }}" style="color: oklch(0.5 0.07 200); text-decoration: none; margin-left: 10px; white-space: nowrap;">{{ pub.linkLabel }} →</a></sc-if></div>
+              <div style="font-size: 14px; line-height: 1.5;"><em style="color: oklch(0.42 0.012 250);">{{ pub.venue }}</em><sc-if value="{{ pub.linkLabel }}" hint-placeholder-val="Paper"><a href="{{ pub.href }}" style="color: oklch(0.52 0.17 55); text-decoration: none; margin-left: 10px; white-space: nowrap;">{{ pub.linkLabel }} →</a></sc-if></div>
             </div>
           </div>
         </sc-for>

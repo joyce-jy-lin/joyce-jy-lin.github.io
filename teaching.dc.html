@@ -45,7 +45,7 @@
 
   <nav style="border-bottom: 1px solid oklch(0.9 0.008 250); background: oklch(0.985 0.004 95); position: sticky; top: 0; z-index: 10;">
     <div class="jl-navbar" style="max-width: 880px; margin: 0 auto; padding: 22px 32px; display: flex; align-items: baseline; justify-content: space-between; gap: 24px; position: relative;">
-      <a href="home.html" style="font-family: 'Newsreader', serif; font-size: 20px; text-decoration: none; color: oklch(0.26 0.012 250);">Joyce J.Y. Lin</a>
+      <a href="home.html" style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: -0.005em; text-decoration: none; color: oklch(0.2 0.012 250);">Joyce J.Y. Lin</a>
       <input type="checkbox" id="jl-nav-toggle" class="jl-nav-toggle"><label for="jl-nav-toggle" class="jl-menu-btn" aria-label="Open menu">☰</label><div class="jl-nav-links" style="display: flex; gap: 26px; font-size: 14px;">
         <a href="publications.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Publications</a>
         <a href="talks.html" style="text-decoration: none; color: oklch(0.4 0.012 250);">Talks</a>
@@ -58,15 +58,15 @@
   </nav>
 
   <main style="max-width: 880px; margin: 0 auto; padding: 64px 32px 40px;">
-    <h1 style="font-family: 'Newsreader', serif; font-weight: 400; font-size: 42px; letter-spacing: -0.01em; margin: 0 0 18px;">Teaching & Mentoring</h1>
+    <h1 style="font-family: 'Public Sans', sans-serif; font-weight: 800; font-size: 42px; letter-spacing: -0.02em; margin: 0 0 18px;">Teaching & Mentoring</h1>
     <p style="font-size: 15.5px; line-height: 1.7; color: oklch(0.42 0.012 250); margin: 0 0 8px; max-width: 62ch;">I teach courses across environmental health, exposure assessment, and epidemiology, and advise students from the undergraduate to doctoral level.</p>
 
     <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="3">
       <section style="margin-top: 44px;">
-        <h2 style="font-family: 'Newsreader', serif; font-weight: 500; font-size: 14px; letter-spacing: 0.13em; text-transform: uppercase; color: oklch(0.5 0.06 200); margin: 0 0 4px;">{{ sec.title }}</h2>
+        <h2 style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: oklch(0.4 0.012 250); margin: 0 0 4px;">{{ sec.title }}</h2>
         <sc-for list="{{ sec.items }}" as="t" hint-placeholder-count="3">
           <div class="jl-row" style="display: grid; grid-template-columns: 108px 1fr; gap: 22px; padding: 18px 0; border-top: 1px solid oklch(0.9 0.008 250); align-items: start;">
-            <div style="font-family: 'Newsreader', serif; font-size: 14px; color: oklch(0.55 0.05 200); padding-top: 2px;">{{ t.role }}</div>
+            <div style="font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 12.5px; color: oklch(0.6 0.17 55); padding-top: 2px;">{{ t.role }}</div>
             <div>
               <div style="font-size: 15.5px; line-height: 1.45; color: oklch(0.22 0.012 250); font-weight: 500; margin-bottom: 5px; text-wrap: pretty;">{{ t.title }}</div>
               <div style="font-size: 14px; line-height: 1.55; color: oklch(0.46 0.012 250);">{{ t.detail }}</div>
